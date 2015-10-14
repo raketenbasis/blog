@@ -5,6 +5,7 @@ script:
 - jekyll build
 deploy:
   provider: s3
+  skip_cleanup: true
   bucket: raketenbasis.com
   region: eu-central-1
   access_key_id:
